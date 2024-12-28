@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "FaridUI",
+  "description": "A beautiful and customizable UI extension for Chrome",
+  "version": "1.0",
+  "author": "Md. Farid Hossen Rehad",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "./../index.html",
+    "default_icon": {
+      "16": "FaridUI1.png",
+      "48": "FaridUI1.png",
+      "128": "FaridUI1.png"
+    }
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}

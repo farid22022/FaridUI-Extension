@@ -1,0 +1,77 @@
+/* Default theme styles */
+:root {
+    --primary-bg: #ffffff;
+    --primary-text: #000000;
+    --secondary-bg: #f7f7f7;
+    --secondary-text: #333333;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+  }
+  
+  /* Retro theme styles */
+  [data-theme="retro"] {
+    --primary-bg: #f0e68c; /* Light yellow background */
+    --primary-text: #2f4f4f; /* Dark slate gray text */
+    --secondary-bg: #ffdead; /* Navajo white */
+    --secondary-text: #8b4513; /* Saddle brown */
+    --button-bg: #ff6347; /* Tomato red */
+    --button-text: #ffffff;
+  }
+  
+  /* Cyberpunk theme styles */
+  [data-theme="cyberpunk"] {
+    --primary-bg: #111111; /* Dark background */
+    --primary-text: #00ff00; /* Neon green text */
+    --secondary-bg: #222222; /* Slightly lighter dark background */
+    --secondary-text: #ff00ff; /* Neon pink */
+    --button-bg: #ff00ff; /* Neon pink button */
+    --button-text: #000000; /* Black text for contrast */
+  }
+  
+  /* Valentine theme styles */
+  [data-theme="valentine"] {
+    --primary-bg: #ffe4e1; /* Misty rose background */
+    --primary-text: #ff1493; /* Deep pink text */
+    --secondary-bg: #ffb6c1; /* Light pink */
+    --secondary-text: #ff69b4; /* Hot pink */
+    --button-bg: #ff1493; /* Deep pink button */
+    --button-text: #ffffff; /* White text */
+  }
+  
+  /* Aqua theme styles */
+  [data-theme="aqua"] {
+    --primary-bg: #e0ffff; /* Light cyan background */
+    --primary-text: #008b8b; /* Dark cyan text */
+    --secondary-bg: #b0e0e6; /* Powder blue */
+    --secondary-text: #20b2aa; /* Light sea green */
+    --button-bg: #20b2aa; /* Light sea green button */
+    --button-text: #ffffff; /* White text */
+  }
+  
+  /* Applying the theme variables */
+  body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+  }
+  
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+  }
+  
+  /* For secondary elements like cards or containers */
+  .container, .dropdown-content {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+  }
+  
+  /* Hover states */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+  }
+  
